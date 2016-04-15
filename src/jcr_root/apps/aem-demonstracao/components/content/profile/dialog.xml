@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Geral
+                jcr:primaryType="cq:Panel"
+                title="Geral">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <nomeCompleto
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Nome completo"
+                        name="./nomeCompleto"
+                        xtype="textfield"/>
+                    <cargo
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Cargo"
+                        name="./cargo"
+                        xtype="textfield"/>
+                    <citacao
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Citação"
+                        name="./citacao"
+                        xtype="textarea"/>
+                    <pic
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Pic"
+                        name="./pic"
+                        rootPath="/content/dam"
+                        xtype="pathfield"/>
+                </items>
+            </Geral>
+            <Social
+                jcr:primaryType="cq:Panel"
+                title="Social">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <twitter
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Twitter"
+                        linkPattern="\{0}.html"
+                        name="./twitter"
+                        xtype="pathfield"/>
+                    <facebook
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Facebook"
+                        linkPattern="\{0}.html"
+                        name="./facebook"
+                        xtype="pathfield"/>
+                    <linkedin
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="LinkedIn"
+                        linkPattern="\{0}.html"
+                        name="./linkedin"
+                        xtype="pathfield"/>
+                </items>
+            </Social>
+        </items>
+    </items>
+</jcr:root>

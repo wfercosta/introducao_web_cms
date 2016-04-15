@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2016-04-14T11:32:23.184-03:00"
+    jcr:createdBy="admin"
+    jcr:description=""
+    jcr:lastModified="{Date}2016-04-14T11:32:23.184-03:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="2"
+    builtWith="Adobe Experience Manager-6.0.0.20140509"
+    group="my_packages"
+    lastUnwrapped="{Date}2016-04-14T11:32:23.184-03:00"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2016-04-14T11:32:23.184-03:00"
+    lastWrappedBy="admin"
+    name="aem-demonstracao"
+    version="">
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/aem-demonstracao"
+            rules="[]"/>
+        <f1
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/content/aem-demonstracao"
+            rules="[]"/>
+        <f2
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/etc/designs/aem-demonstracao"
+            rules="[]"/>
+        <f3
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/content/dam/aem-demonstracao"
+            rules="[]"/>
+    </filter>
+</jcr:root>

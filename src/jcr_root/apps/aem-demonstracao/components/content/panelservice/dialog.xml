@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <geral
+                jcr:primaryType="cq:Panel"
+                title="Geral">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <icone
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="fa-tree"
+                        fieldLabel="Ícone"
+                        name="./faCssClass"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <fa-tree
+                                jcr:primaryType="nt:unstructured"
+                                text="Árvore"
+                                value="fa-tree"/>
+                            <fa-car
+                                jcr:primaryType="nt:unstructured"
+                                text="Carro"
+                                value="fa-car"/>
+                            <fa-support
+                                jcr:primaryType="nt:unstructured"
+                                text="Suporte"
+                                value="fa-support"/>
+                            <fa-database
+                                jcr:primaryType="nt:unstructured"
+                                text="Database"
+                                value="fa-database"/>
+                        </options>
+                    </icone>
+                    <titulo
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Título"
+                        name="./titulo"
+                        xtype="textfield"/>
+                    <descricao
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Descrição"
+                        name="./descricao"
+                        xtype="textarea"/>
+                    <btnRotulo
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Rótulo do botão"
+                        name="./btnRotulo"
+                        xtype="textfield"/>
+                    <btnLigacao
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Caminho/ ligação do botão"
+                        linkPattern="\{0}.html"
+                        name="./btnLigacao"
+                        xtype="pathfield"/>
+                    <btnTarget
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="_self"
+                        fieldLabel="Target do botão"
+                        name="./btnTarget"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <_self
+                                jcr:primaryType="nt:unstructured"
+                                text="_self"
+                                value="_self"/>
+                            <_blank
+                                jcr:primaryType="nt:unstructured"
+                                text="_blank"
+                                value="_blank"/>
+                        </options>
+                    </btnTarget>
+                </items>
+            </geral>
+        </items>
+    </items>
+</jcr:root>
