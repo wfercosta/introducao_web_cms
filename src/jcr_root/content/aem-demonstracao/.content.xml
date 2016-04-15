@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2016-04-14T00:06:58.334-03:00"
+        cq:lastModified="{Date}2016-04-15T10:46:03.568-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/aem-demonstracao/templates/desktop-template"
         jcr:primaryType="cq:PageContent"
@@ -19,31 +19,52 @@
             <carousel
                 jcr:created="{Date}2016-04-14T00:06:09.801-03:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2016-04-14T00:06:09.801-03:00"
+                jcr:lastModified="{Date}2016-04-15T09:45:31.643-03:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="aem-demonstracao/components/content/carousel"/>
+                sling:resourceType="aem-demonstracao/components/content/carousel"
+                id="carouselHome"
+                imagens="[/content/dam/aem-demonstracao/banner/banner1.jpg,/content/dam/aem-demonstracao/banner/banner2.jpg,/content/dam/aem-demonstracao/banner/banner3.jpg]"
+                intervalo="2000"/>
         </parHeader>
         <parContent
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
+            <pageheader
+                jcr:created="{Date}2016-04-15T10:14:42.287-03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-04-15T10:15:10.754-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-demonstracao/components/content/pageheader"
+                titulo="Bem vindo aos negócios modernos"/>
             <columns
                 jcr:created="{Date}2016-04-14T00:06:22.712-03:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2016-04-14T00:06:22.712-03:00"
+                jcr:lastModified="{Date}2016-04-15T10:12:47.047-03:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="aem-demonstracao/components/content/columns">
+                sling:resourceType="aem-demonstracao/components/content/columns"
+                filler="true"
+                isContainer="true"
+                layout="3"
+                quebradelinha="true">
                 <coluna_3_1
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="foundation/components/parsys">
                     <panel
                         jcr:created="{Date}2016-04-14T00:06:34.839-03:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2016-04-14T00:06:34.839-03:00"
+                        jcr:lastModified="{Date}2016-04-15T10:17:00.338-03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="aem-demonstracao/components/content/panel"/>
+                        sling:resourceType="aem-demonstracao/components/content/panel"
+                        btnLigacao="http://uaijug.github.io"
+                        btnRotulo="Leia mais"
+                        btnTarget="_blank"
+                        descricao="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus pulvinar lorem, id sagittis orci. Curabitur pulvinar rhoncus mi, non ornare quam bibendum eu. Nullam efficitur ligula id urna feugiat consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. In iaculis purus nec vehicula eleifend. Sed efficitur vestibulum."
+                        faCssClass="fa-check"
+                        titulo="Primeiro Painel"/>
                 </coluna_3_1>
                 <coluna_3_2
                     jcr:primaryType="nt:unstructured"
@@ -51,10 +72,16 @@
                     <panel
                         jcr:created="{Date}2016-04-14T00:06:43.314-03:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2016-04-14T00:06:43.314-03:00"
+                        jcr:lastModified="{Date}2016-04-15T10:17:40.546-03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="aem-demonstracao/components/content/panel"/>
+                        sling:resourceType="aem-demonstracao/components/content/panel"
+                        btnLigacao="http://uaijug.github.io"
+                        btnRotulo="Leia mais"
+                        btnTarget="_blank"
+                        descricao="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus pulvinar lorem, id sagittis orci. Curabitur pulvinar rhoncus mi, non ornare quam bibendum eu. Nullam efficitur ligula id urna feugiat consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. In iaculis purus nec vehicula eleifend. Sed efficitur vestibulum."
+                        faCssClass="fa-newspaper-o"
+                        titulo="Segundo Painel"/>
                 </coluna_3_2>
                 <coluna_3_3
                     jcr:primaryType="nt:unstructured"
@@ -62,19 +89,75 @@
                     <panel
                         jcr:created="{Date}2016-04-14T00:06:46.874-03:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2016-04-14T00:06:46.874-03:00"
+                        jcr:lastModified="{Date}2016-04-15T10:18:28.687-03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="aem-demonstracao/components/content/panel"/>
+                        sling:resourceType="aem-demonstracao/components/content/panel"
+                        btnLigacao="http://github.com"
+                        btnRotulo="Leia mais"
+                        btnTarget="_blank"
+                        descricao="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus pulvinar lorem, id sagittis orci. Curabitur pulvinar rhoncus mi, non ornare quam bibendum eu. Nullam efficitur ligula id urna feugiat consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. In iaculis purus nec vehicula eleifend. Sed efficitur vestibulum."
+                        faCssClass="fa-calendar"
+                        titulo="Segundo Painel"/>
                 </coluna_3_3>
             </columns>
-            <pageheader
-                jcr:created="{Date}2016-04-14T00:06:58.332-03:00"
+            <pageheader_0
+                jcr:created="{Date}2016-04-15T10:19:06.437-03:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2016-04-14T00:06:58.332-03:00"
+                jcr:lastModified="{Date}2016-04-15T10:26:11.191-03:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="aem-demonstracao/components/content/pageheader"/>
+                sling:resourceType="aem-demonstracao/components/content/pageheader"
+                titulo="Funcionalidades modernas"/>
+            <columns_0
+                jcr:created="{Date}2016-04-15T10:19:19.588-03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-04-15T10:19:25.835-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-demonstracao/components/content/columns"
+                layout="2">
+                <coluna_2_2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <image
+                        jcr:created="{Date}2016-04-15T10:20:10.553-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2016-04-15T10:25:26.348-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/image"
+                        height="300"
+                        imageRotate="0"
+                        width="450">
+                        <file/>
+                    </image>
+                </coluna_2_2>
+                <coluna_2_1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <text
+                        jcr:created="{Date}2016-04-15T10:20:19.974-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2016-04-15T10:20:48.599-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec auctor est, quis suscipit eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla mollis libero at sem euismod, id pretium ligula congue. Fusce nec nulla quis dolor tincidunt posuere. In consectetur nunc id ullamcorper pellentesque. Morbi sed erat vulputate, interdum purus a, scelerisque augue. Nunc a nisi gravida, fringilla est ut, porta quam. Aliquam lectus magna, accumsan vitae porta consequat, iaculis sed justo. Nunc lobortis molestie feugiat. Curabitur lacinia erat ac velit aliquam fermentum. Maecenas sed ante ullamcorper, malesuada sem vitae, maximus urna.&lt;/p>&#xa;&lt;p>Duis semper purus nibh, vitae volutpat tellus hendrerit sed. Duis sodales, magna in varius eleifend, turpis felis rutrum sapien, non dignissim quam nulla id metus. Vestibulum commodo at massa vel tincidunt. Ut dolor magna, porta facilisis mollis sit amet, bibendum non tortor. Nam imperdiet sagittis eleifend. Maecenas non rhoncus eros. Morbi.&lt;/p>&#xa;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </coluna_2_1>
+            </columns_0>
+            <calltoaction
+                jcr:created="{Date}2016-04-15T10:45:07.339-03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-04-15T10:46:03.564-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-demonstracao/components/content/calltoaction"
+                btnLigacao="http://github.com"
+                btnRotulo="Leia mais"
+                btnTarget="_blank"
+                descricao="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id augue sit amet mi bibendum viverra. Donec a diam mi. Vestibulum efficitur bibendum libero quis."/>
         </parContent>
     </jcr:content>
     <sobre/>

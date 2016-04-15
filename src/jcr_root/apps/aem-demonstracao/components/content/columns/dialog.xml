@@ -11,6 +11,18 @@
                 jcr:primaryType="cq:Panel"
                 title="Geral&#xa;">
                 <items jcr:primaryType="cq:WidgetCollection">
+                    <quebralinha
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Quebra de linha"
+                        name="./quebradelinha"
+                        type="checkbox"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <quebralinha
+                                jcr:primaryType="cq:Widget"
+                                value="true"/>
+                        </options>
+                    </quebralinha>
                     <layout
                         jcr:primaryType="cq:Widget"
                         fieldLabel="Layout"

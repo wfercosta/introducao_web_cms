@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2016-04-14T11:03:40.130-03:00"
+        cq:lastModified="{Date}2016-04-15T10:58:24.129-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/aem-demonstracao/templates/desktop-template"
         jcr:primaryType="cq:PageContent"
@@ -36,10 +36,16 @@
                     <panelservice
                         jcr:created="{Date}2016-04-14T11:03:40.128-03:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2016-04-14T11:03:40.128-03:00"
+                        jcr:lastModified="{Date}2016-04-15T10:57:09.183-03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="aem-demonstracao/components/content/panelservice"/>
+                        sling:resourceType="aem-demonstracao/components/content/panelservice"
+                        btnLigacao="http://bedigital.io"
+                        btnRotulo="Leia mais"
+                        btnTarget="_blank"
+                        descricao="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim arcu in magna commodo bibendum. Pellentesque suscipit nisi id sem eleifend consectetur. In auctor tortor."
+                        faCssClass="fa-tree"
+                        titulo="Primeiro Serviço"/>
                 </coluna_4_1>
                 <coluna_4_2
                     jcr:primaryType="nt:unstructured"
@@ -47,10 +53,16 @@
                     <panelservice
                         jcr:created="{Date}2016-04-14T11:03:09.873-03:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2016-04-14T11:03:09.873-03:00"
+                        jcr:lastModified="{Date}2016-04-15T10:57:38.989-03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="aem-demonstracao/components/content/panelservice"/>
+                        sling:resourceType="aem-demonstracao/components/content/panelservice"
+                        btnLigacao="/content/aem-demonstracao/servicos.html"
+                        btnRotulo="Leia mais"
+                        btnTarget="_blank"
+                        descricao="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim arcu in magna commodo bibendum. Pellentesque suscipit nisi id sem eleifend consectetur. In auctor tortor."
+                        faCssClass="fa-car"
+                        titulo="Segundo serviço"/>
                 </coluna_4_2>
                 <coluna_4_3
                     jcr:primaryType="nt:unstructured"
@@ -58,10 +70,16 @@
                     <panelservice
                         jcr:created="{Date}2016-04-14T11:03:16.067-03:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2016-04-14T11:03:16.067-03:00"
+                        jcr:lastModified="{Date}2016-04-15T10:58:03.405-03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="aem-demonstracao/components/content/panelservice"/>
+                        sling:resourceType="aem-demonstracao/components/content/panelservice"
+                        btnLigacao="/content/aem-demonstracao/servicos.html"
+                        btnRotulo="Leia mais"
+                        btnTarget="_blank"
+                        descricao="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim arcu in magna commodo bibendum. Pellentesque suscipit nisi id sem eleifend consectetur. In auctor tortor."
+                        faCssClass="fa-support"
+                        titulo="Terceiro Serviço"/>
                 </coluna_4_3>
                 <coluna_4_4
                     jcr:primaryType="nt:unstructured"
@@ -69,10 +87,16 @@
                     <panelservice
                         jcr:created="{Date}2016-04-14T11:03:21.267-03:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2016-04-14T11:03:21.267-03:00"
+                        jcr:lastModified="{Date}2016-04-15T10:58:24.126-03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="aem-demonstracao/components/content/panelservice"/>
+                        sling:resourceType="aem-demonstracao/components/content/panelservice"
+                        btnLigacao="/content/aem-demonstracao/contato.html"
+                        btnRotulo="Leia mais"
+                        btnTarget="_blank"
+                        descricao="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim arcu in magna commodo bibendum. Pellentesque suscipit nisi id sem eleifend consectetur. In auctor tortor."
+                        faCssClass="fa-database"
+                        titulo="Quarto serviço"/>
                 </coluna_4_4>
             </columns_0>
             <columns

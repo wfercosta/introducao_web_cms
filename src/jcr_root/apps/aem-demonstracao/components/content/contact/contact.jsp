@@ -1,4 +1,20 @@
 <%@include file="/libs/foundation/global.jsp"%><%@page session="false" %>
+<%@ page import="org.apache.commons.lang.StringUtils" %>
+<%
+
+    String telefone = properties.get("telefone", "(99) 9999-9999");
+	String email = properties.get("email", "me@you.com");
+
+	String endereco1 = properties.get("endereco1", "Endereco linha 2");
+	String endereco2 = properties.get("endereco2", "Endereco linha 2");
+
+    String facebook = (String)properties.get("facebook");
+    String twitter = (String)properties.get("twitter");
+    String linkedin = (String)properties.get("linkedin");
+
+
+%>
+
  <!-- Content Row -->
 <div class="row">
     <!-- Map Column -->
@@ -8,30 +24,36 @@
     </div>
     <!-- Contact Details Column -->
     <div class="col-md-4">
-        <h3>Contact Details</h3>
+        <h3>Contato</h3>
         <p>
-            3481 Melrose Place<br>Beverly Hills, CA 90210<br>
+            <%=endereco1%><br><%=endereco2%><br>
         </p>
         <p><i class="fa fa-phone"></i> 
-            <abbr title="Phone">P</abbr>: (123) 456-7890</p>
+            <abbr title="Phone">P</abbr>: <%=telefone%></p>
         <p><i class="fa fa-envelope-o"></i> 
-            <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">name@example.com</a>
+            <abbr title="Email">E</abbr>: <a href="mailto:<%=email%>"><%=email%></a>
         </p>
-        <p><i class="fa fa-clock-o"></i> 
-            <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+
         <ul class="list-unstyled list-inline list-social-icons">
-            <li>
-                <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
-            </li>
+
+            <% if (StringUtils.isNotEmpty(facebook)) {%>
+
+            	<li><a href="<%=facebook%>"><i class="fa fa-2x fa-facebook-square"></i></a></li>
+
+            <%}%>
+
+            <% if (StringUtils.isNotEmpty(twitter)) {%>
+
+            	<li><a href="<%=twitter%>"><i class="fa fa-2x fa-twitter-square"></i></a></li>
+
+            <%}%>
+
+            <% if (StringUtils.isNotEmpty(linkedin)) {%>
+
+            	<li><a href="<%=linkedin%>"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
+
+            <%}%>
+
         </ul>
     </div>
 </div>

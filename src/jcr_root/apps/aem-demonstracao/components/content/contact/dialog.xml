@@ -7,9 +7,56 @@
         jcr:primaryType="cq:Widget"
         xtype="tabpanel">
         <items jcr:primaryType="cq:WidgetCollection">
-            <tab1
+            <geral
                 jcr:primaryType="cq:Panel"
-                title="Tab 1"/>
+                title="Geral">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <endereco1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Linha endereço 1"
+                        name="endereco1"
+                        xtype="textarea"/>
+                    <endereco2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Linha endereço 2"
+                        name="endereco2"
+                        xtype="textarea"/>
+                    <telefone
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Telefone"
+                        name="./telefone"
+                        xtype="textfield"/>
+                    <email
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="E-mail"
+                        name="./email"
+                        xtype="textfield"/>
+                </items>
+            </geral>
+            <Social
+                jcr:primaryType="cq:Panel"
+                title="Social">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <twitter
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Twitter"
+                        linkPattern="\{0}.html"
+                        name="./twitter"
+                        xtype="pathfield"/>
+                    <facebook
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Facebook"
+                        linkPattern="\{0}.html"
+                        name="./facebook"
+                        xtype="pathfield"/>
+                    <linkedin
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="LinkedIn"
+                        linkPattern="\{0}.html"
+                        name="./linkedin"
+                        xtype="pathfield"/>
+                </items>
+            </Social>
         </items>
     </items>
 </jcr:root>

@@ -1,11 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2016-04-14T00:04:21.164-03:00"
+        cq:lastModified="{Date}2016-04-15T14:18:20.595-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/aem-demonstracao/templates/desktop-template"
         jcr:primaryType="cq:PageContent"
         jcr:title="Contato"
-        sling:resourceType="aem-demonstracao/components/page/desktop-page-component"/>
+        sling:resourceType="aem-demonstracao/components/page/desktop-page-component">
+        <parContent
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <pageheader
+                jcr:created="{Date}2016-04-15T11:37:06.462-03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-04-15T11:37:12.023-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-demonstracao/components/content/pageheader"
+                titulo="Contato"/>
+            <contact
+                jcr:created="{Date}2016-04-15T11:21:30.103-03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-04-15T13:55:12.957-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-demonstracao/components/content/contact"
+                email="contato@mg.com.br"
+                facebook="http://www.twitter.com.br"
+                linkedin="http://www.twitter.com.br"
+                telefone="+55 (35) 4321-1234"
+                twitter="http://www.twitter.com.br"/>
+            <contactform
+                jcr:created="{Date}2016-04-15T14:02:48.711-03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-04-15T14:18:20.591-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-demonstracao/components/content/contactform"
+                btnLigacao="/content/aem-demonstracao.html"/>
+        </parContent>
+    </jcr:content>
 </jcr:root>

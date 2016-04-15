@@ -30,7 +30,7 @@
                         jcr:primaryType="cq:Widget"
                         fieldLabel="Pic"
                         name="./pic"
-                        rootPath="/content/dam"
+                        rootPath="/content/dam/aem-demonstracao"
                         xtype="pathfield"/>
                 </items>
             </Geral>

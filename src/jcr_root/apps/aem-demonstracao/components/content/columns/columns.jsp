@@ -1,5 +1,13 @@
 <%@include file="/libs/foundation/global.jsp"%><%@page session="false" %>
 <%
+    Boolean quebradelinha = Boolean.valueOf(properties.get("quebradelinha", "false"));
+%>
+
+<% if (quebradelinha) { %>
+	<br />
+<% } %>
+
+<%
     Integer value = Integer.valueOf(properties.get("layout", "3"));
 
     switch (value) {

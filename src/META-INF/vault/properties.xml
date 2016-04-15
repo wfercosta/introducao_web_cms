@@ -4,15 +4,17 @@
 <comment>FileVault Package Properties</comment>
 <entry key="createdBy">admin</entry>
 <entry key="name">aem-demonstracao</entry>
-<entry key="lastModified">2016-04-14T11:32:23.184-03:00</entry>
+<entry key="lastModified">2016-04-15T14:22:50.355-03:00</entry>
 <entry key="lastModifiedBy">admin</entry>
-<entry key="created">2016-04-14T11:32:23.811-03:00</entry>
-<entry key="buildCount">2</entry>
+<entry key="requiresRestart">false</entry>
+<entry key="created">2016-04-15T14:22:57.487-03:00</entry>
+<entry key="buildCount">3</entry>
 <entry key="version"/>
 <entry key="dependencies"/>
+<entry key="requiresRoot">false</entry>
 <entry key="packageFormatVersion">2</entry>
+<entry key="lastWrapped">2016-04-15T14:22:50.355-03:00</entry>
 <entry key="group">my_packages</entry>
-<entry key="lastWrapped">2016-04-14T11:32:23.184-03:00</entry>
 <entry key="description"/>
 <entry key="lastWrappedBy">admin</entry>
 </properties>

@@ -7,9 +7,25 @@
         jcr:primaryType="cq:Widget"
         xtype="tabpanel">
         <items jcr:primaryType="cq:WidgetCollection">
-            <Geral
+            <geral
                 jcr:primaryType="cq:Panel"
-                title="Tab 1">
+                title="Geral">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <id
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="ID"
+                        name="./id"
+                        xtype="textfield"/>
+                    <intervalo
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Intervalo"
+                        name="./intervalo"
+                        xtype="numberfield"/>
+                </items>
+            </geral>
+            <imagens
+                jcr:primaryType="cq:Panel"
+                title="Imagens">
                 <items jcr:primaryType="cq:WidgetCollection">
                     <imagens
                         jcr:primaryType="cq:Widget"
@@ -18,11 +34,11 @@
                         xtype="multifield">
                         <fieldConfig
                             jcr:primaryType="cq:Widget"
-                            rootpath="/content/dam"
+                            rootpath="/content/dam/aem-demonstracao"
                             xtype="pathfield"/>
                     </imagens>
                 </items>
-            </Geral>
+            </imagens>
         </items>
     </items>
 </jcr:root>
